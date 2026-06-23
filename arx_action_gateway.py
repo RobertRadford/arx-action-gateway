@@ -612,6 +612,11 @@ def require_auth(credentials: Optional[HTTPAuthorizationCredentials] = Depends(s
 app = FastAPI(title=APP_TITLE, version=APP_VERSION)
 
 
+@app.api_route("/", methods=["GET", "HEAD"])
+def root() -> Dict[str, Any]:
+    return {"ok": True, "app": APP_TITLE, "version": APP_VERSION, "mode": mode(), "time": utc_now()}
+
+
 @app.get("/health")
 def health() -> Dict[str, Any]:
     init_db()
