@@ -1,0 +1,16 @@
+{
+  "project": {
+    "name": "Цифровая археология",
+    "stage": "Этап 2 — единый реестр и база цифровой памяти",
+    "doctrine": "evidence → metadata → timeline → duplicate analysis → cleanup",
+    "safety": "Без отдельного решения CEO запрещены удаление, перенос, переименование, cleanup, BAT, PowerShell, EXE и действия с реальными дисками."
+  },
+  "team": {
+    "chief": "ARX-01",
+    "members": ["ARX-02", "ARX-03", "ARX-04", "ARX-05", "ARX-06", "ARX-07", "ARX-08"]
+  },
+  "routing": {
+    "approval_required_for_tags": ["ORDER", "TASK", "SYNC", "LIVE_TEST", "DISPATCH", "REQUEST"],
+    "default_target": "TEAM"
+  }
+}
